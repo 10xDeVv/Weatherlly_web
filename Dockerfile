@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package
 
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Install JavaFX native dependencies and tools
