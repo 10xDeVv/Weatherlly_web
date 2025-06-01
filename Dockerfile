@@ -1,10 +1,6 @@
 FROM bellsoft/liberica-runtime-container:jdk-21-slim-glibc
 
 
-# Install any needed libraries for JavaFX
-RUN apt-get update && \
-    apt-get install -y xorg libgtk-3-0 libasound2 libgl1-mesa-glx libfreetype6 fonts-dejavu
-
 WORKDIR /app
 
 # Copy your Maven project
