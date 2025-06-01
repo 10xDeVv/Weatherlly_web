@@ -1,1 +1,1 @@
-web: java -jar target/weatherly-jpro-1.0-SNAPSHOT.jar
+web: java -jar target/original-weatherly-jpro-1.0-SNAPSHOT.jar
