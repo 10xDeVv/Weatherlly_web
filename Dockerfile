@@ -5,7 +5,7 @@ COPY . .
 RUN mvn clean package
 
 # Use Liberica Full JDK (with JavaFX) for runtime
-FROM bellsoft/liberica-openjdk-debian:21.0.3-17-full
+FROM bellsoft/liberica-openjdk-debian:latest
 
 WORKDIR /app
 COPY --from=build /app/target/weatherly-jpro-1.0-SNAPSHOT.jar app.jar
