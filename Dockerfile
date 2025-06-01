@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Install JavaFX native dependencies and tools
 RUN apt-get update && apt-get install -y \
-    libx11-6 libxrender1 libxtst6 libxi6 libglib2.0-0 libgtk-3-0 libasound2 wget unzip \
+    libx11-6 libxrender1 libxtst6 libxi6 libglib2.0-0 libgtk-3-0 libasound2t4 wget unzip \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /app/target/weatherly-jpro-1.0-SNAPSHOT.jar app.jar
