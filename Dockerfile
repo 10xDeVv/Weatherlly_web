@@ -15,4 +15,5 @@ RUN apt-get update && apt-get install -y wget unzip \
 
 EXPOSE 8080
 
-CMD ["java", "--module-path", "/app/javafx-sdk-21.0.2/lib", "--add-modules", "ALL-MODULE-PATH", "-Djpro.startpage=one.jpro.hellojpro.App", "-jar", "app.jar"]
+ENV LD_LIBRARY_PATH="/app/javafx-sdk-21.0.2/lib"
+CMD ["java", "--module-path", "/app/javafx-sdk-21.0.2/lib", "--add-modules", "ALL-MODULE-PATH", "-Djava.library.path=/app/javafx-sdk-21.0.2/lib", "-Djpro.startpage=one.jpro.hellojpro.App", "-jar", "app.jar"]
