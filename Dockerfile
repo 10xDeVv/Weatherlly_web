@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-full:21
+FROM bellsoft/liberica-runtime-container:21
 
 # Install any needed libraries for JavaFX
 RUN apt-get update && \
