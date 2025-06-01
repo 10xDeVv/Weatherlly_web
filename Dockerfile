@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Build your app (creates target/*.jar)
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 # Expose the port (Heroku will set $PORT)
 EXPOSE 8080
