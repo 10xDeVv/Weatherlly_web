@@ -20,5 +20,5 @@ RUN wget https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_linux-x64_b
 
 EXPOSE 8080
 ENV LD_LIBRARY_PATH="/app/javafx-sdk-21.0.2/lib"
-CMD ["sh", "-c", "java --module-path /app/javafx-sdk-21.0.2/lib --add-modules ALL-MODULE-PATH -Djava.library.path=/app/javafx-sdk-21.0.2/lib -Djpro.startpage=one.jpro.hellojpro.App -Djpro.port=$PORT -jar app.jar"]
+CMD ["sh", "-c", "java --module-path /app/javafx-sdk-21.0.2/lib --add-modules ALL-MODULE-PATH -Djava.library.path=/app/javafx-sdk-21.0.2/lib -Dprism.order=sw -Djavafx.platform=Headless -Djpro.startpage=one.jpro.hellojpro.App -Djpro.port=$PORT -jar app.jar"]
 
