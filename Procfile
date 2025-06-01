@@ -1,1 +1,1 @@
-web: java -jar target/weatherly-jpro-1.0-SNAPSHOT.jar
+web: java --module-path .jdk-overlay/openjfx/lib:target/weatherly-jpro-1.0-SNAPSHOT.jar --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.base -jar target/weatherly-jpro-1.0-SNAPSHOT.jar
